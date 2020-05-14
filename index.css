@@ -1,0 +1,34 @@
+body {
+    font-family: Arial,x-locale-body,sans-serif;
+    font-size: large;
+    background-color: #111;
+    color: #ddd;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.item {
+    background-color: #1e1e20;
+    width: 50%;
+    max-width: 800px;
+    padding: 10px;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px #999;
+    margin: 1em 0;
+}
+
+.item img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.item a {
+    font-size: larger;
+    font-weight: bold;
+    color: #ddd;
+}

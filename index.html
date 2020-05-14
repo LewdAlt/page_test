@@ -4,22 +4,21 @@
         <meta charset="UTF-8">
         <!-- development version, includes helpful console warnings -->
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="app">
-            <select v-model="chosenCategory">
-                <option v-for="cat in categories" :value="cat">
-                    {{cat}}
-                </option>
-            </select>
-            <div v-for="item in shownItems">
-                <ul>
-                    <li>{{item.name}}</li>
-                    <li>Category: {{item.category}}</li>
-                    <li>{{item.description}}</li>
-                    <img :src="item.image">
-                    <a :href="item.url">Download</a>
-                </ul>                
+            <div class="item">
+                Category: <select v-model="chosenCategory">
+                    <option v-for="cat in categories" :value="cat">
+                        {{cat}}
+                    </option>
+                </select>
+            </div>
+            <div class="item" v-for="item in shownItems">
+                <a class="item-dl" :href="item.url">{{item.name}}</a> ({{item.category}})
+                <p>{{item.description}}</p>
+                <img :src="item.image">
             </div>
         </div>
         <script src="index.js"></script>

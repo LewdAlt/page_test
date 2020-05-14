@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Testing</title>
+        <meta charset="UTF-8">
+        <!-- development version, includes helpful console warnings -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div v-for="item in items">
+                <ul>
+                    <li>{{item.name}}</li>
+                    <li>Category: {{item.category}}</li>
+                    <li>{{item.description}}</li>
+                    <img :src="item.image">
+                    <a :href="item.url">Download</a>
+                </ul>                
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

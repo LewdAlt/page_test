@@ -16,7 +16,7 @@
                 </select>
             </div>
             <div class="item" v-for="item in shownItems">
-                <a class="item-dl" :href="item.url">{{item.name}}</a> ({{item.category}})
+                <span><a class="item-dl" :href="item.url">{{item.name}}</a> [{{item.category}}]</span>
                 <p>{{item.description}}</p>
                 <img :src="item.image">
             </div>

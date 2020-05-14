@@ -12,9 +12,11 @@ body {
 }
 
 .item {
+    display: inline-flex;
+    flex-direction: column;
     background-color: #1e1e20;
-    width: 50%;
-    max-width: 800px;
+    width: 95%;
+    max-width: 1000px;
     padding: 10px;
     align-self: center;
     border-radius: 10px;
@@ -22,9 +24,14 @@ body {
     margin: 1em 0;
 }
 
+.item span {
+    color: #555;
+}
+
 .item img {
+    align-self: center;
     margin-top: 10px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .item a {

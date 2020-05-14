@@ -7,7 +7,12 @@
     </head>
     <body>
         <div id="app">
-            <div v-for="item in items">
+            <select v-model="chosenCategory">
+                <option v-for="cat in categories" :value="cat">
+                    {{cat}}
+                </option>
+            </select>
+            <div v-for="item in shownItems">
                 <ul>
                     <li>{{item.name}}</li>
                     <li>Category: {{item.category}}</li>
